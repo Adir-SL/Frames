@@ -1,0 +1,10 @@
+{
+  "appId": "com.frames.app",
+  "appName": "Frames",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
