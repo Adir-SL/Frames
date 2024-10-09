@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Wadido</h1>
+      <h1>Frames</h1>
       <button>Click me</button>
     </>
   )
