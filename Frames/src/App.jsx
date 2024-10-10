@@ -11,7 +11,8 @@ function App() {
     <>
       <h1>Frames</h1>
       <button>Click me</button>
-
+      <br />
+      <Frame />
     </>
   )
 }
