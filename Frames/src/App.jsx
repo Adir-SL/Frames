@@ -12,7 +12,7 @@ function App() {
       <h1>Frames</h1>
       <button>Click me</button>
       <br />
-      <Frame source="https://github.com/Adir-SL" />
+      <Frame source="https://adir.dev" />
     </>
   )
 }
