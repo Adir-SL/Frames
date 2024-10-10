@@ -5,7 +5,7 @@ function Frame() {
 
   return (
     <>
-      <iframe src="https://adir.dev"></iframe>
+      <iframe src="https://adir.dev" className='frame'></iframe>
     </>
   )
 }
