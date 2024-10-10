@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './Frame.css'
 
-function Frame() {
+function Frame(props) {
 
   return (
     <>
-      <iframe src="https://adir.dev" className='frame' onLoad={(e) => { setInterval(function () { e.target.contentWindow.scrollTo(0, 1200) }, 300) }}></iframe>
+      <iframe src={props.source} className='frame' onLoad={(e) => { setInterval(function () { e.target.contentWindow.scrollTo(0, 1200) }, 300) }}></iframe>
     </>
   )
 }
