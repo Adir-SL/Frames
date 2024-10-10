@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 // import Frame from './components/Frame';
 import ReactIframe from 'react-iframe';
+import './Frame.css'
 
 
 function App() {
