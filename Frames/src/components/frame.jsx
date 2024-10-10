@@ -5,6 +5,7 @@ function Frame(props) {
 
   return (
     <>
+      <br />
       <iframe src={props.source} className='frame'
       // onLoad={(e) => { setInterval(function () { e.target.contentWindow.scrollTo(0, 1200) }, 300) }}
       ></iframe>
