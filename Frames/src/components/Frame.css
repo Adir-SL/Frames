@@ -1,4 +1,4 @@
-#root{
+#root {
     max-width: calc(100% - 2em) !important;
     padding: 1em !important;
 }
@@ -20,7 +20,12 @@
     border: 2px solid lightgray;
 }
 
-h1{
+.content h1 {
+    top: 0;
+    position: sticky;
+}
+
+h1 {
     padding: 20px;
     margin: 0;
 }
@@ -33,6 +38,7 @@ article {
     text-align: right;
     overflow: hidden !important;
 }
-article div{
+
+article div {
     max-width: max-content !important;
 }
