@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <h1>Frames</h1>
-      <button>Click me</button>
 
       <div className="content">
         <GitHubCalendar username="adir-sl" className='frame' />

@@ -1,8 +1,13 @@
+#root{
+    max-width: calc(100% - 2em) !important;
+    padding: 1em !important;
+}
+
 .content {
     display: flex;
     flex-direction: column;
-    max-width: 1280px !important;
-    width: calc(100vw - 4em) !important;
+    width: 100%;
+    gap: 16px;
     justify-items: stretch;
 }
 
