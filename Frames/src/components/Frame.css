@@ -1,13 +1,21 @@
-.content{
+.content {
     display: flex;
     flex-direction: column;
+    max-width: 1280px !important;
+    width: calc(100vw - 4em) !important;
+    justify-items: stretch;
+}
+
+.content>* {
+    flex-grow: 1;
+    max-width: unset !important;
+    width: unset !important;
+    /* width: 100% !important; */
 }
 
 .frame,
 article {
-    width: calc(100vw - 4em) !important;
     height: 15vh;
-    max-width: 1280px !important;
     border: none;
     border-radius: 16px;
     background-color: white;
@@ -15,8 +23,6 @@ article {
 }
 
 article {
-    width: calc(100vw - 4em - 40px) !important;
-    max-width: calc(1280px - 40px) !important;
+    width: 100%;
     padding: 20px;
-    height: calc(15vh - 40px);
 }
