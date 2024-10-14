@@ -20,6 +20,11 @@
     border: 2px solid lightgray;
 }
 
+h1{
+    padding: 20px;
+    margin: 0;
+}
+
 article {
     padding: 20px;
     display: flex;

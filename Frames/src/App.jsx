@@ -13,9 +13,8 @@ function App() {
 
   return (
     <>
-      <h1>Frames</h1>
-
       <div className="content">
+        <h1>Frames</h1>
         <GitHubCalendar username="adir-sl" className='frame' />
         <ReactIframe url="https://adir.dev" className='frame' />
         <ReactIframe url="https://adir.dev" className='frame' />
