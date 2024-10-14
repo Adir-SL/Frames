@@ -16,15 +16,17 @@ function App() {
       <h1>Frames</h1>
       <button>Click me</button>
 
-      <GitHubCalendar username="adir-sl" className='frame' />
-      <ReactIframe url="https://adir.dev" className='frame' />
-      <ReactIframe url="https://adir.dev" className='frame' />
+      <div className="content">
+        <GitHubCalendar username="adir-sl" className='frame' />
+        <ReactIframe url="https://adir.dev" className='frame' />
+        <ReactIframe url="https://adir.dev" className='frame' />
+      </div>
 
       {/* <ReactIframe url="https://www.google.com" className='frame' />
       <ReactIframe url="https://adir.dev" className='frame' />
       <ReactIframe url="https://github.com/Adir-SL"  className='frame'/>
       <ReactIframe url="https://adir.dev" className='frame' /> */}
-      
+
       {/* <Frame source="https://www.google.com" />
       <Frame source="https://adir.dev" />
       <Frame source="https://github.com/Adir-SL" />

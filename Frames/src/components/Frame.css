@@ -1,3 +1,8 @@
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
 .frame,
 article {
     width: calc(100vw - 4em) !important;
@@ -13,4 +18,5 @@ article {
     width: calc(100vw - 4em - 40px) !important;
     max-width: calc(1280px - 40px) !important;
     padding: 20px;
+    height: calc(15vh - 40px);
 }
