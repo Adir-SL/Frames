@@ -17,6 +17,8 @@ function App() {
       <button>Click me</button>
 
       <GitHubCalendar username="adir-sl" className='frame' />
+      <ReactIframe url="https://adir.dev" className='frame' />
+      <ReactIframe url="https://adir.dev" className='frame' />
 
       {/* <ReactIframe url="https://www.google.com" className='frame' />
       <ReactIframe url="https://adir.dev" className='frame' />
