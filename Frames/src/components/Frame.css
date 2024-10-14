@@ -17,4 +17,12 @@
 
 article {
     padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    overflow: hidden !important;
+}
+article div{
+    max-width: max-content !important;
 }
