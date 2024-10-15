@@ -24,7 +24,7 @@
 }
 
 .content h1 {
-    top: 0;
+    top: 1em;
     height: unset;
     position: sticky;
     margin-top: 1em;
