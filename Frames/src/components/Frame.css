@@ -9,6 +9,10 @@
     width: 100%;
     gap: 16px;
     justify-items: stretch;
+    /* overflow: auto; */
+    background-color: white;
+    /* box-shadow: 0 0 0 1px blue; */
+    margin-top: 2em;
 }
 
 .content>* {
@@ -24,10 +28,10 @@
 }
 
 .content h1 {
-    top: 1em;
+    /* top: 2em; */
     height: unset;
-    position: sticky;
-    margin-top: 1em;
+    /* position: sticky; */
+    /* margin-top: 1em; */
 }
 
 h1 {
