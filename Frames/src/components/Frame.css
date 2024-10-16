@@ -35,6 +35,7 @@
     padding-top: 1em;
     border-radius: 0 !important;
     box-shadow: none !important;
+    box-shadow: 1em 0 0 0 white, -1em 0 0 0 white !important;
 }
 
 h1 {
