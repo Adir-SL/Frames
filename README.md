@@ -1,6 +1,6 @@
 # Frames
 
-## Directions:
+### Directions:
 #### Running locally:
 1. cd Frames
 2. npm run dev
