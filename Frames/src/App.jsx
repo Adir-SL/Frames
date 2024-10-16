@@ -18,6 +18,8 @@ function App() {
         <GitHubCalendar username="adir-sl" className='frame' />
         <ReactIframe url="https://adir.dev" className='frame' />
         <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' />
+        <ReactIframe url="https://adir.dev" className='frame' />
+        <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' />
       </div>
 
       {/* <ReactIframe url="https://www.google.com" className='frame' />
