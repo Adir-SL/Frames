@@ -1,6 +1,7 @@
 #root {
     max-width: calc(100% - 2em) !important;
     padding: 1em !important;
+    padding-top: 0 !important;
 }
 
 .content {
@@ -12,7 +13,7 @@
     /* overflow: auto; */
     background-color: white;
     box-shadow: 0 0 0 1px blue;
-    margin-top: 2.5em;
+    /* margin-top: 2.5em; */
 }
 
 .content>* {
@@ -28,10 +29,12 @@
 }
 
 .content h1 {
-    top: 1em;
+    top: 0;
     height: unset;
     position: sticky;
-    /* margin-top: 1em; */
+    padding-top: 1em;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 h1 {
