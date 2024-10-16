@@ -10,10 +10,7 @@
     width: 100%;
     gap: 16px;
     justify-items: stretch;
-    /* overflow: auto; */
     background-color: white;
-    /* box-shadow: 0 0 0 1px blue; */
-    /* margin-top: 2.5em; */
 }
 
 .content>* {
@@ -23,7 +20,6 @@
     width: unset !important;
     border-radius: 16px;
     background-color: white;
-    /* border: 1px solid #e5e5e5; */
     border: none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
