@@ -11,7 +11,7 @@
     justify-items: stretch;
     /* overflow: auto; */
     background-color: white;
-    /* box-shadow: 0 0 0 1px blue; */
+    box-shadow: 0 0 0 1px blue;
     margin-top: 2.5em;
 }
 
@@ -28,9 +28,9 @@
 }
 
 .content h1 {
-    /* top: 2em; */
+    top: 1em;
     height: unset;
-    /* position: sticky; */
+    position: sticky;
     /* margin-top: 1em; */
 }
 
