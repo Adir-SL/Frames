@@ -10,7 +10,7 @@
     padding-top: 0 !important;
 }
 
-.scrolled h1 {
+body.scrolled h1 {
     transform: scale(.5);
 }
 
