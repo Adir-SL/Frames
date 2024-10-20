@@ -4,6 +4,10 @@
     padding-top: 0 !important;
 }
 
+body.scrolled h1{
+    font-size: 1.5em;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -31,6 +35,8 @@
     padding-top: 1.5em;
     border-radius: 0 !important;
     box-shadow: none !important;
+    font-size: 3em;
+    transition: font-size 300ms ease-in-out 0s;
     box-shadow: 1em 0 0 0 white, -1em 0 0 0 white !important;
 }
 
