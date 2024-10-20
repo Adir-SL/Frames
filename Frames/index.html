@@ -8,7 +8,12 @@
   <title>Vite + React</title>
   <script>
     function scrollFunc() {
-      console.log('scrolling');
+      // console.log('scrolling');
+      if (document.body.getBoundingClientRect().top !== 0) {
+        document.body.classList.add('scrolled');
+      }else{
+        document.body.classList.remove('scrolled');
+      }
     }
   </script>
 </head>
