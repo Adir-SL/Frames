@@ -37,6 +37,8 @@ body.scrolled h1 {
 }
 
 .content h1 {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: normal;
     top: 0;
     height: unset;
     position: sticky;
