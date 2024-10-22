@@ -48,7 +48,7 @@ body.scrolled h1 {
     font-size: 3em;
     color: var(--txt-color);
     transition: all 300ms ease-in-out 0s;
-    box-shadow: 5em -1.6em 0 0 var(--bg-color), -5em -1.6em 0 0 var(--bg-color), 0 -1.6em 0 0 var(--bg-color), 10em 0 0 0 var(--bg-color), -10em 0 0 0 var(--bg-color) !important;
+    box-shadow: 10em -1.6em 0 0 var(--bg-color), -10em -1.6em 0 0 var(--bg-color), 0 -1.6em 0 0 var(--bg-color), 10em 0 0 0 var(--bg-color), -10em 0 0 0 var(--bg-color) !important;
 }
 
 h1 {
