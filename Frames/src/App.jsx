@@ -6,10 +6,6 @@ import ReactIframe from 'react-iframe';
 import './Frame.css'
 import GitHubCalendar from 'react-github-calendar';
 
-import React from 'react'
-import { useDrag } from 'react-dnd'
-import { ItemTypes } from './Constants'
-
 
 function App() {
   const [count, setCount] = useState(0)
