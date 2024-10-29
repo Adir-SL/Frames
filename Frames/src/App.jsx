@@ -14,7 +14,6 @@ function App() {
     <>
       <div className="content">
         <h1>Frames</h1>
-        bla
         <GitHubCalendar username="adir-sl" className='frame' data-swapy-slot="a" />
         <ReactIframe url="https://adir.dev" className='frame' data-swapy-slot="b" />
         <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' data-swapy-slot="c" />
