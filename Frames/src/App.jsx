@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ReactIframe from 'react-iframe';
-import './Frame.css'
+import './Frames.css'
 import GitHubCalendar from 'react-github-calendar';
 import React, { useRef } from 'react'
 import { useDrag, useDrop } from 'react-dnd'
