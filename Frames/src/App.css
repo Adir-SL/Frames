@@ -35,6 +35,26 @@
   justify-content: flex-end;
 }
 
+.content *[flex-num="100"] {
+  order: 1;
+}
+
+.content *[flex-num="200"] {
+  order: 2;
+}
+
+.content *[flex-num="300"] {
+  order: 3;
+}
+
+.content *[flex-num="400"] {
+  order: 4;
+}
+
+.content *[flex-num="500"] {
+  order: 5;
+}
+
 .github-frame article {
   padding-top: 4px;
 }
