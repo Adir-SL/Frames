@@ -34,17 +34,22 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
-.github-frame article{
+
+.github-frame article {
   padding-top: 4px;
 }
-header{
+
+header {
   display: flex;
 }
-header button{
+
+header button {
   display: flex;
   padding: 8px;
+  background-color: transparent;
 }
-header button svg{
+
+header button svg {
   width: 16px;
   height: 16px;
 }
