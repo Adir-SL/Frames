@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ReactIframe from 'react-iframe';
 import './Frames.css';
+import Github from "./components/Github";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <>
       <div className="content">
         <h1>Frames</h1>
-        <GitHubCalendar username="adir-sl" className='frame' data-swapy-slot="a" />
+        <Github user="adir-sl"></Github>
         <ReactIframe url="https://adir.dev" className='frame' data-swapy-slot="b" />
         <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' data-swapy-slot="c" />
         <ReactIframe url="https://adir.dev" className='frame' />
