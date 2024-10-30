@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import GitHubCalendar from 'react-github-calendar';
+import ReactIframe from 'react-iframe';
 import Header from "./Header";
 
 function Frame(props) {
@@ -7,7 +7,7 @@ function Frame(props) {
   return (
     <div className='frame' flex-num={props.flexNum}>
       <Header></Header>
-      <ReactIframe url={url} className='frame'/>
+      <ReactIframe url={props.url} className='frame'/>
     </div>
   )
 }
