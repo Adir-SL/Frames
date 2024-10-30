@@ -47,11 +47,14 @@ header button {
   display: flex;
   padding: 8px;
   background-color: transparent;
+  outline: none !important;
+  border: none !important;
 }
 
 header button svg {
   width: 16px;
   height: 16px;
+  color: gray;
 }
 
 @keyframes logo-spin {
