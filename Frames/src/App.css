@@ -55,6 +55,7 @@ header button svg {
   width: 16px;
   height: 16px;
   color: gray;
+  pointer-events: none;
 }
 
 @keyframes logo-spin {
