@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div className="content">
-        <h1>Frames</h1>
+        <h1 flex-num="0">Frames</h1>
         <Github user="adir-sl" flexNum="100"></Github>
         <ReactIframe url="https://adir.dev" className='frame' data-swapy-slot="b" flex-num="200" />
         <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' data-swapy-slot="c" flex-num="300" />

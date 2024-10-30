@@ -35,6 +35,10 @@
   justify-content: flex-end;
 }
 
+.content *[flex-num="0"] {
+  order: 0;
+}
+
 .content *[flex-num="100"] {
   order: 1;
 }
