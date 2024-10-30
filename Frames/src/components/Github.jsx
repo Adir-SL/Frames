@@ -5,13 +5,7 @@ function Github(props) {
 
   return (
     <>
-      <br />
-      <br />
-      <b>{props.source}</b>
-      <br/>
-      <iframe src={props.source} className='frame'
-      // onLoad={(e) => { setInterval(function () { e.target.contentWindow.scrollTo(0, 1200) }, 300) }}
-      ></iframe>
+      <GitHubCalendar username={props.user} className='frame' data-swapy-slot="a" />
     </>
   )
 }
