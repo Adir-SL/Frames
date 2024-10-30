@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="content">
         <h1>Frames</h1>
-        <Github user="adir-sl"></Github>
+        <Github user="adir-sl" flexNum="100"></Github>
         <ReactIframe url="https://adir.dev" className='frame' data-swapy-slot="b" />
         <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' data-swapy-slot="c" />
         <ReactIframe url="https://adir.dev" className='frame' />
