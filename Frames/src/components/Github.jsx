@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import GitHubCalendar from 'react-github-calendar';
-import './Github.css';
 
 function Github(props) {
 
