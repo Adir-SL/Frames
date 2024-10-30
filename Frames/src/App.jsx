@@ -13,10 +13,10 @@ function App() {
       <div className="content">
         <h1>Frames</h1>
         <Github user="adir-sl" flexNum="100"></Github>
-        <ReactIframe url="https://adir.dev" className='frame' data-swapy-slot="b" />
-        <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' data-swapy-slot="c" />
-        <ReactIframe url="https://adir.dev" className='frame' />
-        <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' />
+        <ReactIframe url="https://adir.dev" className='frame' data-swapy-slot="b" flex-num="200" />
+        <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' data-swapy-slot="c" flex-num="300" />
+        <ReactIframe url="https://adir.dev" className='frame' flex-num="400" />
+        <ReactIframe url="https://en.wikipedia.org/wiki/MacOS" className='frame' flex-num="500" />
       </div>
     </>
   )
