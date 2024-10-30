@@ -7,7 +7,7 @@ function Frame(props) {
   return (
     <div className='frame' flex-num={props.flexNum}>
       <Header></Header>
-      <ReactIframe url={props.url} className='frame'/>
+      <ReactIframe url={props.url}/>
     </div>
   )
 }

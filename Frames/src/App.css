@@ -20,6 +20,20 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .github-frame {
   display: flex;
   flex-direction: column;
