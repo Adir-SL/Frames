@@ -5,7 +5,7 @@ import Header from "./Header";
 function Frame(props) {
 
   return (
-    <div className='frame' flex-num={props.flexNum}>
+    <div className='frame item' flex-num={props.flexNum}>
       <Header></Header>
       <ReactIframe url={props.url}/>
     </div>

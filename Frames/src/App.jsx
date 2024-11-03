@@ -9,9 +9,10 @@ import Frame from "./components/Frame";
 
 
 function App() {
+  
   return (
     <>
-      <div className="content">
+      <div className="content list" onClick={(e) => sortable('.list')}>
         <h1 flex-num="0">Frames</h1>
         <Github user="adir-sl" flexNum="100"></Github>
         <Frame url="https://adir.dev" flexNum="200"></Frame>
