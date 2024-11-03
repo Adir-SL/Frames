@@ -48,7 +48,7 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
-
+/* 
 .content *[flex-num="0"] {
   order: 0;
 }
@@ -71,7 +71,7 @@
 
 .content *[flex-num="500"] {
   order: 5;
-}
+} */
 
 .github-frame article {
   padding-top: 4px;
