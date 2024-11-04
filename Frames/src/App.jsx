@@ -90,7 +90,7 @@ const App = () => {
   return (
     <>
       <h1 flex-num="0">Frames</h1>
-      <div className="list content">
+      <div className="content list">
         {items.map(item => (
           <div
             key={item.id}
