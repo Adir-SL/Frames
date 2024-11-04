@@ -29,6 +29,7 @@
 // export default App
 
 import React, { useState } from 'react';
+import './App.css'
 import './Frames.css';
 import Github from "./components/Github";
 import Frame from "./components/Frame";
