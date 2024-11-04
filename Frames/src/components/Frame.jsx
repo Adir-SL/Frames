@@ -6,7 +6,7 @@ function Frame(props) {
 
   return (
     <div className='frame item' flex-num={props.flexNum} draggable="true">
-      <Header></Header>
+      {/* <Header></Header> */}
       <ReactIframe url={props.url}/>
     </div>
   )
