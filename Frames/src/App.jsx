@@ -42,7 +42,7 @@ const App = () => {
     { id: 1, content: <Github user="adir-sl" flexNum="100"></Github> },
     { id: 2, content: <Frame url="https://adir.dev" flexNum="200"></Frame> },
     { id: 3, content: <Frame url="https://en.wikipedia.org/wiki/MacOS" flexNum="300"></Frame> },
-    { id: 4, content: <Frame url="https://adir.dev" flexNum="200"></Frame> },
+    // { id: 4, content: 'Card 4' },
   ]);
   const [draggingId, setDraggingId] = useState(null);
 
@@ -69,48 +69,23 @@ const App = () => {
     setDraggingId(null);
   };
 
-  const handleTouchStart = (id) => {
-    setDraggingId(id);
-  };
-
-  const handleTouchMove = (event) => {
-    event.preventDefault(); // Prevents scrolling on mobile during drag
-    const touch = event.touches[0];
-    const elementUnderTouch = document.elementFromPoint(touch.clientX, touch.clientY);
-
-    if (elementUnderTouch) {
-      const hoverItem = elementUnderTouch.closest('.item');
-      if (hoverItem && hoverItem.dataset.id) {
-        handleDragOver(event, parseInt(hoverItem.dataset.id));
-      }
-    }
-  };
-
-  const handleTouchEnd = () => {
-    setDraggingId(null);
-  };
-
   return (
     <>
-      <h1 flex-num="0">Frames</h1>
-      <div className="content list">
-        {items.map(item => (
-          <div
-            key={item.id}
-            className="item"
-            data-id={item.id}
-            draggable
-            onDragStart={() => handleDragStart(item.id)}
-            onDragOver={(event) => handleDragOver(event, item.id)}
-            onDragEnd={handleDragEnd}
-            onTouchStart={() => handleTouchStart(item.id)}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          >
-            {item.content}
-          </div>
-        ))}
-      </div>
+    <h1 flex-num="0">Frames</h1>
+    <div className="content list">
+      {items.map(item => (
+        <div
+          key={item.id}
+          className="item"
+          draggable
+          onDragStart={() => handleDragStart(item.id)}
+          onDragOver={(event) => handleDragOver(event, item.id)}
+          onDragEnd={handleDragEnd}
+        >
+          {item.content}
+        </div>
+      ))}
+    </div>
     </>
   );
 };
