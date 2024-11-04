@@ -82,6 +82,7 @@ header {
 }
 
 header button {
+  visibility: hidden;
   display: flex;
   padding: 8px;
   background-color: transparent;
