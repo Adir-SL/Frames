@@ -28,7 +28,7 @@
 
 // export default App
 
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -45,8 +45,6 @@ const App = () => {
     { id: 4, content: <Frame url="https://adir.dev" flexNum="200"></Frame> },
   ]);
   const [draggingId, setDraggingId] = useState(null);
-  const ghostRef = useRef(null);
-  const touchTimeoutRef = useRef(null);
 
   const handleDragStart = (id) => {
     setDraggingId(id);
@@ -69,38 +67,16 @@ const App = () => {
 
   const handleDragEnd = () => {
     setDraggingId(null);
-    if (ghostRef.current) {
-      ghostRef.current.style.display = 'none';
-    }
   };
 
-  const handleTouchStart = (id, event) => {
-    touchTimeoutRef.current = setTimeout(() => {
-      setDraggingId(id);
-      const touch = event.touches[0];
-
-      // Create a ghost element
-      if (ghostRef.current) {
-        ghostRef.current.innerHTML = document.querySelector(`[data-id="${id}"]`).innerHTML;
-        ghostRef.current.style.display = 'block';
-        ghostRef.current.style.left = `${touch.clientX}px`;
-        ghostRef.current.style.top = `${touch.clientY}px`;
-      }
-    }, 150); // Adds a delay before the drag starts on mobile
+  const handleTouchStart = (id) => {
+    setDraggingId(id);
   };
 
   const handleTouchMove = (event) => {
-    if (draggingId === null) return;
-
-    event.preventDefault();
+    event.preventDefault(); // Prevents scrolling on mobile during drag
     const touch = event.touches[0];
     const elementUnderTouch = document.elementFromPoint(touch.clientX, touch.clientY);
-
-    // Move the ghost element with the touch
-    if (ghostRef.current) {
-      ghostRef.current.style.left = `${touch.clientX}px`;
-      ghostRef.current.style.top = `${touch.clientY}px`;
-    }
 
     if (elementUnderTouch) {
       const hoverItem = elementUnderTouch.closest('.item');
@@ -111,27 +87,23 @@ const App = () => {
   };
 
   const handleTouchEnd = () => {
-    clearTimeout(touchTimeoutRef.current);
     setDraggingId(null);
-    if (ghostRef.current) {
-      ghostRef.current.style.display = 'none';
-    }
   };
 
   return (
     <>
       <h1 flex-num="0">Frames</h1>
-      <div className="list content">
+      <div className="content list">
         {items.map(item => (
           <div
             key={item.id}
-            className={`item ${draggingId === item.id ? 'dragging' : ''}`}
+            className="item"
             data-id={item.id}
             draggable
             onDragStart={() => handleDragStart(item.id)}
             onDragOver={(event) => handleDragOver(event, item.id)}
             onDragEnd={handleDragEnd}
-            onTouchStart={(event) => handleTouchStart(item.id, event)}
+            onTouchStart={() => handleTouchStart(item.id)}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
@@ -139,8 +111,6 @@ const App = () => {
           </div>
         ))}
       </div>
-      {/* Ghost element */}
-      <div ref={ghostRef} className="ghost"></div>
     </>
   );
 };
