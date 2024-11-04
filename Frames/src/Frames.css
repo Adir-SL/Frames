@@ -71,7 +71,7 @@ article div {
     max-width: max-content !important;
 }
 
-.frame {
+.frame, .github-frame {
     height: 14em;
 }
 .item{
