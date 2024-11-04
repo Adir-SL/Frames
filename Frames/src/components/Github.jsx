@@ -6,7 +6,7 @@ function Github(props) {
 
   return (
     <div className='github-frame item' flex-num={props.flexNum} draggable="true">
-      {/* <Header></Header> */}
+      <Header></Header>
       <GitHubCalendar username={props.user} className='frame' data-swapy-slot="a" />
     </div>
   )
