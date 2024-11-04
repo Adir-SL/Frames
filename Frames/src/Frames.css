@@ -43,6 +43,7 @@ h1 {
     height: unset;
     position: sticky;
     padding-top: 1.5em !important;
+    margin-bottom: 0.2em !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     font-size: 3em;
